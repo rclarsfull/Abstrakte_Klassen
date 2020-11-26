@@ -1,4 +1,4 @@
-public class Mitarbeiter {
+public abstract class Mitarbeiter {
     private String name;
     protected int grundgehalt;
     protected int kontonummer;
@@ -12,9 +12,10 @@ public class Mitarbeiter {
         this.kontonummer = kontonummer;
     }
 
-    public double verdienstBerrechnen(){
-        return 2000;
-    }
+    public  abstract double verdienstBerrechnen();
+
+    // Eigenschaft von Abstrakten Klassen: Aus abstrackten klassern lässt sich kein objekt erstellen, die Sgnaturren müssen geleich bleibn
+
 
 
     public String getName() {
